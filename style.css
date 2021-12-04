@@ -1,51 +1,71 @@
 #page-content {
     width: 100vw;
-  }
-  
-  #floating-text {
+}
+
+#floating-text {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-  }
-  
-  #inner-content {
-    width: 60vw;
-  }
-  
-  body {
+}
+
+#inner-content {
+    width: 66vw;
+}
+
+body {
     /* background-color: #E7ECEF; */
     /* background-color: #F6F0ED; */
     /* background-color: #F6F7EB; */
     background-color: #e6e6e6;
-  }
-  
-  p {
+}
+
+p {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     color: #272932;
-  }
-  
-  h2 {
+    font-size: 20px;
+}
+
+h2 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 800;
+    font-weight: 300;
     color: #272932;
-  }
-  
-  p > a {
-    position: relative;
+    font-size: 40px;
+}
+
+p>a {
+    /* position: relative;
     color: #000;
+    text-decoration: none; */
+    /* text-decoration: underline; */
+    /* border-bottom: 1px solid #000; */
+    /* color: #272932; */
+    color: #13505B;
     text-decoration: none;
-  }
-  
-  p > a:hover {
-    color: #000;
-  }
-  
-  p > a:before {
+    background-image: linear-gradient(#13505B, #13505B), linear-gradient(#13505B, #13505B), linear-gradient(#119DA4, #119DA4);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    /* transition: background-size 0.3s linear, background-position 0.3s linear; */
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+p>a:hover {
+    /* color: #000; */
+    color: #119DA4;
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+
+
+/* p>a:before {
+    display: inline-block;
     content: "";
     position: absolute;
+    display: inline-block;
     width: 100%;
     height: 1px;
     bottom: 0;
@@ -55,10 +75,11 @@
     transform: scaleX(1);
     -webkit-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
-  }
-  
-  p > a:hover:before {
+} */
+
+
+/* p > a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-  }
+  } */
