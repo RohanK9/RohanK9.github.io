@@ -18,21 +18,21 @@ body {
     /* background-color: #E7ECEF; */
     /* background-color: #F6F0ED; */
     /* background-color: #F6F7EB; */
-    background-color: #e6e6e6;
+    background-color: #E7ECEF;
 }
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 100;
+    font-family: BlinkMacSystemFont, -apple-system, 'Source Sans Pro', sans-serif;
+    font-weight: 250;
     color: #272932;
-    font-size: 20px;
+    font-size: 17.5px;
 }
 
 h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: #272932;
-    font-size: 40px;
+    font-size: 37px;
 }
 
 p>a {
@@ -59,6 +59,25 @@ p>a:hover {
     background-size: 20px 2px, 0 2px, 100% 2px;
     background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
 }
+
+.waving-hand {
+    animation-name: wave-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    15% { transform: rotate(20.0deg) } 
+    30% { transform: rotate(-9.0deg) }
+    40% { transform: rotate(20.0deg) }
+    50% { transform: rotate(-9.0deg) }
+    60% { transform: rotate(12.0deg) }
+    70% { transform: rotate( 0.0deg) }  
+   100% { transform: rotate( 0.0deg) }
+  }
 
 
 /* p>a:before {
